@@ -40,11 +40,27 @@ class loginPage {
 
 
     }
+      VerifyForgotPassword (){
+        cy.contains('Reset Password link sent successfully').should('be.visible');
+    }
         
-    
-    
+      inputUsernameForgotPass (){
+        cy.get("input[placeholder='Username']").type('Admin');
+
+      }
+
+
+    Resetpassword_btn (){
+       cy.get("button[type='submit']").click();
+
     }
 
+    VerifyUsernameForgotPassBlank (){
+       cy.xpath("//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']").should('contains.text','Required')
+
+
+ }
+    }
 
 
 export default new loginPage() 

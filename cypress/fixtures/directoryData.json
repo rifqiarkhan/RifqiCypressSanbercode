@@ -1,0 +1,8 @@
+{
+    "valid employee name": "João Victor Alves",
+    "valid job title" : "HR Manager",
+    "valid Location" : "Texas R&D",
+    "invalid employee name": "Ags",
+    "invalid job title" : "Mancing Mania",
+    "invalid Location" : "Joglo"
+}
